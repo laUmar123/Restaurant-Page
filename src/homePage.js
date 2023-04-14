@@ -41,4 +41,34 @@ const generateNav = function () {
     return nav;
 };
 
+/**
+ * Generates the main element for the home page
+ * @returns the main DOM element that contains the home page's main content
+ */
+const generateMain = function () {
+    const main = document.createElement('main');
+    const titleTwo = document.createElement('h2');
+    const established = document.createElement('h6');
+    titleTwo.innerHTML = 'The Finest Pakistani Cuisine';
+    established.innerHTML = 'ESTABLISHED SINCE 1880';
+    main.append(titleTwo);
+    main.append(established);
+    return main;
+};
+
+/**
+ * Generates the footer element that will be used on all pages
+ * @returns the footer DOM element
+ */
+const generateFooter = function () {
+    const footer = document.createElement('footer');
+    const footerMessage = document.createElement('h4');
+    const gitImage = document.createElement('img');
+    gitImage.src = "./../src/assets/iconmonstr-github-1-240.png";
+    footerMessage.innerHTML = `Developed by laUmar123`;
+    footerMessage.append(gitImage);
+    footer.append(footerMessage);
+    return footer;
+};
+
 export { generateHeader };
