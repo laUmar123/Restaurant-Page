@@ -1,5 +1,7 @@
 const generateHeader = function () {
     const header = document.createElement('header');
+    header.append(generateTitle());
+    header.append(generateNav());
     return header;
 };
 
