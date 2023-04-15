@@ -103,3 +103,51 @@ footer {
     justify-content: center;
     background-color: var(--transparent-dark-background);
 }
+
+.menu-background,
+.contact-background {
+    grid-column: 2;
+    grid-row: 2;
+    background-color: var(--transparent-dark-background);
+    border-radius: 30px;
+    justify-self: center;
+    padding: 2rem;
+}
+
+.menu-background {
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    row-gap: 2rem;
+    justify-items: center;
+}
+
+.menu-item {
+    display: grid;
+    grid-template-rows: 1fr 0.2fr 0.7fr;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    width: 20rem;
+    max-height: 28rem;
+    justify-items: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dish-image {
+    grid-row: 1;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.dish-name {
+    grid-row: 2;
+    font-size: 4rem;
+    font-family: 'luxurious', Arial, Helvetica, sans-serif;
+}
+
+.dish-description {
+    font-size: 1.1rem;
+    text-align: center;
+}
