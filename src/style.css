@@ -151,3 +151,22 @@ footer {
     font-size: 1.1rem;
     text-align: center;
 }
+
+.contact-background {
+    height: 40rem;
+    align-self: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr 4fr;
+}
+
+.telephone,
+.address {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.location-image {
+    height: 25rem;
+    width: 40rem;
+}
