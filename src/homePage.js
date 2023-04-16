@@ -73,4 +73,4 @@ const generateFooter = function () {
     return footer;
 };
 
-export { generateHeader };
+export { generateHeader, generateMain, generateFooter };
